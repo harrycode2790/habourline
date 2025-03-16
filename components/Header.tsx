@@ -1,14 +1,30 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 
 const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor = 'black'}) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className={`bg-${backgroundColor} text-${textColor} py-5 px-7 shadow-sm`}>
+    <header className={
+      ` bg-${ scrolling ? '[#1019C2]' : backgroundColor } text-${scrolling ? 'white' : textColor} py-5 px-7 shadow-sm sticky top-0 z-50 transition-all duration-1000 `
+      }>
       <div className="container mx-auto flex items-center justify-between md:justify-start relative">
         {/* Mobile: Menu button on the LEFT */}
         <button className="md:hidden p-2 absolute left-0" onClick={() => setIsOpen(!isOpen)}>
@@ -30,11 +46,11 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
 
         {/* Desktop: Navigation CENTERED */}
         <nav className="hidden md:flex flex-10  justify-center space-x-10">
-          <Link href="#" className={`hover:text-${hoverColor}`}>About</Link>
-          <Link href="#" className={`hover:text-${hoverColor}`}>Services</Link>
-          <Link href="#" className={`hover:text-${hoverColor}`}>Location</Link>
-          <Link href="#" className={`hover:text-${hoverColor}`}>Our Strength</Link>
-          <Link href="#" className={`hover:text-${hoverColor}`}>Customer Care</Link>
+          <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
+          <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
+          <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
+          <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
+          <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
         </nav>
 
         {/* Desktop: Track & Login Buttons (Right) */}
@@ -51,11 +67,11 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
       {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className={`md:hidden mt-4 bg-${backgroundColor} p-4 rounded-md space-y-3`}>
-          <Link href="#" className={`block hover:text-${hoverColor}`}>About</Link>
-          <Link href="#" className={`block hover:text-${hoverColor}`}>Services</Link>
-          <Link href="#" className={`block hover:text-${hoverColor}`}>Location</Link>
-          <Link href="#" className={`block hover:text-${hoverColor}`}>Our Strength</Link>
-          <Link href="#" className={`block hover:text-${hoverColor}`}>Customer Care</Link>
+          <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
+          <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
+          <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
+          <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
+          <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
 
           {/* Mobile: Track & Login Buttons */}
           <div className="mt-4 flex flex-col space-y-2">
