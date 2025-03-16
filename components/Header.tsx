@@ -33,7 +33,16 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
 
         {/* Mobile: Logo CENTERED / Desktop: Left */}
         <div className="flex-2 flex justify-center md:justify-start">
-          <Image 
+          {scrolling ? (
+            <Image 
+              src="/images/logoW.png" 
+              alt="Logo" 
+              width={200} 
+              height={200} 
+              className="md:w-52 lg:w-64 h-auto"
+            />
+          ) : (
+            <Image 
              
             src="/images/harbourline logo.png" 
             alt="Logo" 
@@ -41,6 +50,8 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
             height={200} 
             className="md:w-48 lg:w-64 h-auto"
           />
+          ) }
+         
         </div>
 
 
