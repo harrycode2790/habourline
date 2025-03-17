@@ -37,7 +37,7 @@ const HeroPage = () => {
             alt="Shipping Containers"
             width={900}
             height={300}
-            className="rounded-lg w-full h-auto "
+            className=" w-full h-auto "
             />
         </div>
         </section>
