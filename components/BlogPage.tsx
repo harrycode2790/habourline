@@ -38,7 +38,7 @@ const BlogPage = () => {
       </div>
 
       
-      <div className="grid grid-cols-1 md:grid-cols-[67%_33%] gap-8 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-[67%_33%] gap-8 md:gap-5 mb-8 mr-5">
        
         <div className="group">
           <div className="relative w-full h-60">
@@ -63,7 +63,7 @@ const BlogPage = () => {
       </div>
 
       
-      <div className="grid grid-cols-1 md:grid-cols-[33%_33%_33%] gap-8 md:gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-5">
         {articles.slice(2, 5).map((article, index) => (
           <div key={index} className="group">
             <div className="relative w-full h-60">
