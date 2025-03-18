@@ -3,6 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaUsers, FaTags, FaArrowRight, FaShip,  FaTruckMoving, FaBoxOpen, FaCar, } from "react-icons/fa";
 import { MdContactPhone } from "react-icons/md";
+import breakLineText from "@/utils/breakText";
+
+const Texts = ['HarbourLine Offstore LTD Express provides customized services for customers around the world from 50+ leading industries.', 
+                'Sometimes features require a short  description. This can be detailed description or just a short text', 
+                'The tools you need to  win and keep more  clients',
+                "We Transport goods  across the world's ocean  with precision and care",
+                
+            ]
 
 
 const HeroPage = () => {
@@ -23,8 +31,7 @@ const HeroPage = () => {
             {/* Description */}
             <div className="md:col-span-4 text-center md:text-left">
                 <p className="text-gray-700 mt-4 md:mt-12 text-base md:text-lg">
-                    HarbourLine Offstore LTD Express provides customized services for customers around 
-                    the world from 50+ leading industries.
+                    {breakLineText(Texts[0], 4)}
                 </p>
             </div>
         
@@ -53,10 +60,7 @@ const HeroPage = () => {
             <FaUsers className="text-5xl text-[#DA7934] mx-auto md:mx-0" />
 
             <h3 className="text-lg md:text-xl font-bold mt-4">Top Team</h3>
-            <p className="text-gray-600 mt-2 text-sm md:text-base">
-                Sometimes features require a short <br /> description. This can be detailed <br />
-                description or just a short text.
-            </p>
+            <p className="text-gray-600 mt-2 text-sm md:text-base"> {breakLineText(Texts[1], 5)} </p>
             <Link
                 href="#"
                 className="text-[#0B91D4] font-semibold mt-4 inline-flex items-center gap-2"
@@ -69,10 +73,7 @@ const HeroPage = () => {
             <div className="text-center md:text-start">
             <MdContactPhone className="text-5xl text-[#DA7934] mx-auto md:mx-0" />
             <h3 className="text-lg md:text-xl font-bold mt-4">Customer Support</h3>
-            <p className="text-gray-600 mt-2 text-sm md:text-base">
-                Sometimes features require a short <br /> description. This can be detailed <br />
-                description or just a short text.
-            </p>
+            <p className="text-gray-600 mt-2 text-sm md:text-base">{breakLineText(Texts[1], 5)}</p>
             <Link
                 href="#"
                 className="text-[#0B91D4] font-semibold mt-4 inline-flex items-center gap-2"
@@ -85,10 +86,7 @@ const HeroPage = () => {
             <div className="text-center md:text-start">
             <FaTags className="text-5xl text-[#DA7934] mx-auto md:mx-0"  />
             <h3 className="text-lg md:text-xl font-bold mt-4">Competitive Rates</h3>
-            <p className="text-gray-600 mt-2 text-sm md:text-base">
-                Sometimes features require a short <br /> description. This can be detailed <br />
-                description or just a short text.
-            </p>
+            <p className="text-gray-600 mt-2 text-sm md:text-base">{breakLineText(Texts[1], 5)}</p>
             <Link
                 href="#"
                 className="text-[#0B91D4] font-semibold mt-4 inline-flex items-center gap-2"
@@ -106,8 +104,8 @@ const HeroPage = () => {
         <section className="mt-40 mb-30 ">
         <div className="container mx-auto ">
         <h2 className="text-2xl md:text-6xl text-black text-center md:text-left font-bold mb-20">
-            <span className="block md:hidden">The tools you need to <br /> win and keep more <br /> clients </span>
-            <span className="hidden md:block">We Transport goods <br /> across the world's ocean <br /> with precision and care</span>
+            <span className="block md:hidden">{breakLineText(Texts[2], 5)} </span>
+            <span className="hidden md:block">{breakLineText(Texts[3], 5)}</span>
 
         </h2>
 
@@ -119,10 +117,7 @@ const HeroPage = () => {
             <FaShip className="text-5xl text-[#DA7934] mx-auto md:mx-0" />
 
             <h3 className="text-lg md:text-xl font-bold mt-4">Marine Cargo Service</h3>
-            <p className="text-gray-600 mt-2 text-sm md:text-base">
-                Sometimes features require a short <br /> description. This can be detailed <br />
-                description or just a short text.
-            </p>
+            <p className="text-gray-600 mt-2 text-sm md:text-base">{breakLineText(Texts[1], 5)}</p>
           
             </div>
 
@@ -130,10 +125,7 @@ const HeroPage = () => {
             <div className="text-center md:text-start">
             <FaCar className="text-5xl text-[#DA7934] mx-auto md:mx-0" />
             <h3 className="text-lg md:text-xl font-bold mt-4">Car Shipping Services</h3>
-            <p className="text-gray-600 mt-2 text-sm md:text-base">
-                Sometimes features require a short <br /> description. This can be detailed <br />
-                description or just a short text.
-            </p>
+            <p className="text-gray-600 mt-2 text-sm md:text-base">{breakLineText(Texts[1], 5)} </p>
          
             </div>
 
@@ -141,20 +133,14 @@ const HeroPage = () => {
             <div className="text-center md:text-start">
             <FaTruckMoving className="text-5xl text-[#DA7934] mx-auto md:mx-0"  />
             <h3 className="text-lg md:text-xl font-bold mt-4">Heavy Equipment Services</h3>
-            <p className="text-gray-600 mt-2 text-sm md:text-base">
-                Sometimes features require a short <br /> description. This can be detailed <br />
-                description or just a short text.
-            </p>
+            <p className="text-gray-600 mt-2 text-sm md:text-base">{breakLineText(Texts[1], 5)}</p>
          
             </div>
 
             <div className="text-center md:text-start">
             <FaBoxOpen className="text-5xl text-[#DA7934] mx-auto md:mx-0"  />
             <h3 className="text-lg md:text-xl font-bold mt-4">Contanier Sea Cargo</h3>
-            <p className="text-gray-600 mt-2 text-sm md:text-base">
-                Sometimes features require a short <br /> description. This can be detailed <br />
-                description or just a short text.
-            </p>
+            <p className="text-gray-600 mt-2 text-sm md:text-base">{breakLineText(Texts[1], 5)}</p>
          
             </div>
         </div>

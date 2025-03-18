@@ -1,4 +1,6 @@
 import BlogPage from "@/components/BlogPage"
+import FaqPage from "@/components/FaqPage"
+import FooterPage from "@/components/FooterPage"
 import Header from "@/components/Header"
 import HeroPage from "@/components/HeroPage"
 import IndustrialPage from "@/components/IndustrialPage"
@@ -15,6 +17,8 @@ const page = () => {
       <div className=" conatiner px-6 py-12 md:py-20 md:px-50">
         <TestimonialPgae/>
         <BlogPage/>
+        <FaqPage/>
+        <FooterPage/>
       </div>
      
     </>

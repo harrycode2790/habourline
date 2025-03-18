@@ -38,7 +38,7 @@ const BlogPage = () => {
       </div>
 
       
-      <div className="grid grid-cols-1 md:grid-cols-[67%_33%] gap-8 md:gap-5 mb-8 mr-5">
+      <div className="grid grid-cols-1 md:grid-cols-[67%_33%] gap-8 md:gap-5 mb-8 md:mr-5">
        
         <div className="group">
           <div className="relative w-full h-60">
