@@ -16,7 +16,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroun
         style={{ backgroundImage: `url(${backgroundImage})` }}>
 
         <Header />
-        <div className="px-6  flex flex-col md:flex-row mt-8 md:mt-108 md:gap-8">
+        <div className="px-6  flex flex-col md:flex-row mt-16 md:mt-108 md:gap-8">
             <h1 className="text-4xl md:text-6xl font-bold md:max-w-[847px] md:pl-20">{title}</h1>
             <p className="mt-4 text-base md:text-lg max-w-xs md:max-w-3xs mx-auto">{description}</p>
         </div>
