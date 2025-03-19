@@ -7,6 +7,7 @@ import Image from "next/image";
 const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor = 'black'}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+  const [imageSrc, setImageSrc] = useState("/images/mobile_logo.png");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +22,18 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const updateImage = () => {
+      setImageSrc(  window.innerWidth >= 768 ? "/images/logoW.png" : "/images/mobile_logo.png");
+    };
+
+    updateImage(); // Set on initial load
+    window.addEventListener("resize", updateImage);
+    
+    return () => window.removeEventListener("resize", updateImage);
+  }, []);
+
+
   return (
     <header className={
       ` bg-${ scrolling ? '[#1019C2]' : backgroundColor } text-${scrolling ? 'white' : textColor} py-5 px-7 shadow-sm sticky top-0 z-50 transition-all duration-1000 `
@@ -34,22 +47,27 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
         {/* Mobile: Logo CENTERED / Desktop: Left */}
         <div className="flex-2 flex justify-center md:justify-start">
           {scrolling ? (
-            <Image 
-              src="/images/logoW.png" 
+            <Link href={`/`}>
+               <Image 
+              src={ imageSrc }
               alt="Logo" 
               width={200} 
               height={200} 
-              className="md:w-52 lg:w-64 h-auto"
+              className=" w-32 md:w-52 lg:w-64 h-auto"
             />
+            </Link>
+           
           ) : (
-            <Image 
-             
-            src="/images/harbourline logo.png" 
+            <Link href={`/`}>
+            <Image              
+            src={ window.innerWidth >= 768 ? "/images/harbourline logo.png" : "/images/mobile_logo.png"}
             alt="Logo" 
             width={200} 
             height={200} 
-            className="md:w-48 lg:w-64 h-auto"
+            className=" w-32 md:w-48 lg:w-64 h-auto"
           />
+            </Link>
+       
           ) }
          
         </div>
@@ -61,7 +79,7 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
           <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
           <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
           <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
-          <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
+          <Link href="/customer-care" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
         </nav>
 
         {/* Desktop: Track & Login Buttons (Right) */}
@@ -70,19 +88,19 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
             Track
           </Link>
           <button className="bg-[#0B91D4] text-white px-4 py-2 rounded-md hover:bg-blue-400">
-            <Link href="/">Charter a Vessel</Link>
+            Charter a Vessel
           </button>
         </div>
       </div>
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className={`md:hidden mt-4 bg-${backgroundColor} p-4 rounded-md space-y-3`}>
+        <div className={`md:hidden mt-4 p-4 rounded-md space-y-3`}>
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
-          <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
+          <Link href="/customer-care" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
 
           {/* Mobile: Track & Login Buttons */}
           <div className="mt-4 flex flex-col space-y-2">

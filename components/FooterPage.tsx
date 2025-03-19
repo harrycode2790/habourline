@@ -11,7 +11,7 @@ const FooterPage = () => {
       <div className="max-w-7xl mx-auto px-6 py-12">
     
             <div className="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-20 md:mb-35 gap-8">      
-                <h2 className="text-3xl md:text-5xl font-bold">Your Needs are our <br /> priority</h2>
+                <h2 className="text-2xl md:text-5xl font-bold">Your Needs are our <br /> priority</h2>
                 <div className="mt-4 md:mt-5">
                     <button className="bg-[#0B91D4] text-white px-6  py-4 flex items-center gap-8  hover:bg-[#1019C2]">
                     Contact Us <FaArrowRight className=" ml-4 md:ml-9"/>
