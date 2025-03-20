@@ -6,7 +6,9 @@ import Image from "next/image";
 
 
 
+
 const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor = 'black' , imageUrl = "/images/harbourline logo.png"})  => {
+
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const [imageSrc, setImageSrc] = useState("/images/mobile_logo.png");
@@ -77,7 +79,7 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
 
         {/* Desktop: Navigation CENTERED */}
         <nav className="hidden md:flex flex-10  justify-center space-x-10">
-          <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
+          <Link href="/about" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
           <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
           <Link href="/location" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
           <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
