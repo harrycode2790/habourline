@@ -20,7 +20,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroun
        
         <div className="absolute inset-0 bg-black/50"></div>
 
-        <Header backgroundColor="transparent" textColor="white" />
+        <Header backgroundColor="transparent" textColor="white" hoverColor="white" imageUrl="/images/logoW.png"/>
 
         <div className="relative px-6 flex flex-col md:flex-row mt-16 md:mt-108 md:gap-8">
           <p className="text-4xl md:text-6xl font-bold md:max-w-[847px] md:pl-20">
