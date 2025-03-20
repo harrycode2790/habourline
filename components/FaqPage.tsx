@@ -24,10 +24,7 @@ const faqs = [
       question: "What mostly people want to ask no.5 ?",
       answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
-    {
-      question: "What mostly people want to ask no.5 ?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
+   
   ];
 
 const FaqPage = () => {
