@@ -95,13 +95,8 @@ const Header = ({ backgroundColor = "transparent" , textColor = 'gray-700', hove
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-<<<<<<< HEAD
         <div className={`md:hidden mt-4 bg-${backgroundColor} p-4 rounded-md space-y-3`}>
           <Link href="/about" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
-=======
-        <div className={`md:hidden mt-4 p-4 rounded-md space-y-3`}>
-          <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
->>>>>>> main
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
