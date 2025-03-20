@@ -3,11 +3,18 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Header = ({ backgroundColor = "transparent" , textColor = 'gray-700', hoverColor = 'black'}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const [imageSrc, setImageSrc] = useState("/images/mobile_logo.png");
+  const currentPage = usePathname();
+  const whiteTextPages = ["/about"];
+
+  if (whiteTextPages.includes(currentPage)) {
+    textColor = "white";
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,7 +111,7 @@ const Header = ({ backgroundColor = "transparent" , textColor = 'gray-700', hove
 
           {/* Mobile: Track & Login Buttons */}
           <div className="mt-4 flex flex-col space-y-2">
-            <Link href="#" className="text-black font-semibold text-center">Track</Link>
+            <Link href="#" className="font-semibold text-center">Track</Link>
             <button className="bg-[#0B91D4] text-white text-center px-4 py-2 rounded-md hover:bg-blue-400">
               <Link href="/">Charter a Vessel</Link>
             </button>
