@@ -12,7 +12,7 @@ const AboutInfoSection = () => {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16">
+    <section className="py-10">
       <h2 className="text-2xl md:text-[32px] font-bold mb-8">Get more info about us</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {infoCards.map((item, index) => (

@@ -11,7 +11,7 @@ interface StatsSectionProps {
 
 const StatsSection: React.FC<StatsSectionProps> = ({ stats }) => {
   return (
-    <section className="py-28">
+    <section className="py-14">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         {stats.map((stat, index) => (
           <div key={index} className="flex flex-col">

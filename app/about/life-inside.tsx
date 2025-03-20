@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const LifeInside = () => {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16">
+    <section className="py-10">
       {/* Title */}
       <h2 className="text-2xl md:text-6xl font-bold text-center md:text-left mb-10">
         Life inside Habourline offshore

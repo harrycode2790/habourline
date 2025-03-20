@@ -10,7 +10,7 @@ interface TwoColumnTextProps {
 
 const TwoColumnText: React.FC<TwoColumnTextProps> = ({ leftText, rightText }) => {
   return (
-    <section className="py-16 max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+    <section className="py-12 grid grid-cols-1 md:grid-cols-2 gap-12">
       {/* Left Column */}
       <div>
         <h2 className="text-2xl md:text-6xl font-bold">{leftText}</h2>
