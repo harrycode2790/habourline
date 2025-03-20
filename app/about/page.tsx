@@ -3,6 +3,8 @@ import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
 import TwoColumnText from "@/components/TwoColumnText";
 import LifeInside from "./life-inside";
+import AboutInfoSection from "./about-info";
+import FooterPage from "@/components/FooterPage";
 
 export default function AboutPage() {
     const stats = [
@@ -34,6 +36,10 @@ export default function AboutPage() {
         />
 
         <LifeInside />
+
+        <AboutInfoSection />
+
+        <FooterPage />
         </>
     );
 }
