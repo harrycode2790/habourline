@@ -9,8 +9,7 @@ const Texts = ['HarbourLine Offstore LTD Express provides customized services fo
                 'Sometimes features require a short  description. This can be detailed description or just a short text', 
                 'The tools you need to  win and keep more  clients',
                 "We Transport goods  across the world's ocean  with precision and care",
-                
-            ]
+                         ]
 
 
 const HeroPage = () => {

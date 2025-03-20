@@ -2,8 +2,16 @@
 import Image from "next/image"
 import { useState } from "react"
 
+interface Testimonial {
+    image: string;
+    text: string;
+    name: string;
+    position: string;
+    logoW: string;
+    logoB: string;
+  }
 
-const testimonials = [
+const testimonials : Testimonial[] = [
     {
         image: "/images/amazonP.png",
         text: "Designspace has consistently delivered above and beyond my expectations. Brilliant design work, incredible response time, and a really friendly team.",

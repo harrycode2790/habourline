@@ -4,9 +4,15 @@ import breakLineText from "@/utils/breakText"
 import { JSX } from "react";
 import { MdForum, MdInfo, MdMail, MdPhone } from "react-icons/md";
 
+interface Card {
+    title: string;
+    description: string;
+  }
 
 
-const cards = [
+
+
+const cards : Card[] = [
     {
     title: "For business",
     description: "Shipping regularly? Request a business account and profit from exclusive benefits",
@@ -25,7 +31,7 @@ const cards = [
     },
 ]
 
-const services = [
+const services  = [
     {
       title: "Habourline Express",
       description:

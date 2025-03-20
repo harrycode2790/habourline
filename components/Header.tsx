@@ -4,7 +4,11 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 
-const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor = 'black' }) => {
+
+
+
+const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor = 'black' , imageUrl = "/images/harbourline logo.png"})  => {
+
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const [imageSrc, setImageSrc] = useState("/images/mobile_logo.png");
@@ -60,7 +64,7 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
           ) : (
             <Link href={`/`}>
             <Image              
-            src={ window.innerWidth >= 768 ? "/images/harbourline logo.png" : "/images/mobile_logo.png"}
+            src={ window.innerWidth >= 768 ? imageUrl : "/images/mobile_logo.png"}
             alt="Logo" 
             width={200} 
             height={200} 
@@ -77,14 +81,14 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
         <nav className="hidden md:flex flex-10  justify-center space-x-10">
           <Link href="/about" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
           <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
-          <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
+          <Link href="/location" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
           <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
           <Link href="/customer-care" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
         </nav>
 
         {/* Desktop: Track & Login Buttons (Right) */}
         <div className="hidden md:flex space-x-4">
-          <Link href="#" className="text-black font-semibold px-4 py-2 rounded-md">
+          <Link href="#" className={`text-${hoverColor} font-semibold px-4 py-2 rounded-md`}>
             Track
           </Link>
           <button className="bg-[#0B91D4] text-white px-4 py-2 rounded-md hover:bg-blue-400">
@@ -98,13 +102,13 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
         <div className={`md:hidden mt-4 p-4 rounded-md space-y-3`}>
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
-          <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
+          <Link href="/location" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
           <Link href="/customer-care" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
 
           {/* Mobile: Track & Login Buttons */}
           <div className="mt-4 flex flex-col space-y-2">
-            <Link href="#" className="text-black font-semibold text-center">Track</Link>
+            <Link href="#" className={`text-${hoverColor} font-semibold text-center`}>Track</Link>
             <button className="bg-[#0B91D4] text-white text-center px-4 py-2 rounded-md hover:bg-blue-400">
               <Link href="/">Charter a Vessel</Link>
             </button>

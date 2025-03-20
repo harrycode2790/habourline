@@ -7,7 +7,7 @@ const text = 'Habourline offshore ltd provides customized services for customers
 const FooterPage = () => {
 
   return (
-    <footer className="text-gray-800 py-12 ">
+    <footer className="text-gray-800 mt-20  ">
       <div className="max-w-7xl mx-auto px-6 py-12">
     
             <div className="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-20 md:mb-35 gap-8">      
