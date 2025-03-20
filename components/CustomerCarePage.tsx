@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { FaArrowRight, FaShippingFast, FaStore } from "react-icons/fa"
 import breakLineText from "@/utils/breakText"
-import { Phone, Mail, Info,} from "lucide-react";
 import { JSX } from "react";
 import { MdForum, MdInfo, MdMail, MdPhone } from "react-icons/md";
 
