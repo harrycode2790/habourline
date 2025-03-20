@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
 import TwoColumnText from "@/components/TwoColumnText";
+import LifeInside from "./life-inside";
 
 export default function AboutPage() {
     const stats = [
@@ -17,6 +18,7 @@ export default function AboutPage() {
             description="Sometimes features require a short description. This can be detailed description or just a short text."
             backgroundImage="/images/about-top.png"
         />
+
         <StatsSection stats= {stats} />
 
         <TwoColumnText
@@ -30,6 +32,8 @@ export default function AboutPage() {
             ],
             }}
         />
+
+        <LifeInside />
         </>
     );
 }
