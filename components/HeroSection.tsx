@@ -15,7 +15,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroun
     <>
     
       <section
-        className="relative h-[522px] md:h-[750px] bg-cover bg-center text-white  md:text-left"
+        className={`relative min-h-[522px] md:min-h-[750px] bg-cover bg-center text-white md:text-left bg-[${backgroundColor}]`}
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
        

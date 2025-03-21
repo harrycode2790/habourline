@@ -70,7 +70,7 @@ const FooterPage = () => {
 
         {/* Footer Bottom */}
         <div className="mt-10 md:mt-20 flex flex-col md:flex-row items-start justify-between text-sm text-gray-500">
-          <p>© 2024 All rights reserved</p>
+          <p>© {new Date().getFullYear()} All rights reserved</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <FaInstagram className="cursor-pointer hover:text-gray-700" />
             <FaTwitter className="cursor-pointer hover:text-gray-700" />
