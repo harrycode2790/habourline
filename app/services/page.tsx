@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import TwoColumnText from "@/components/TwoColumnText";
 import ServicesList from "./services-list";
 import QuoteSection from "./quote-section";
+import FooterPage from "@/components/FooterPage";
 
 export default function ServicesPage() {
 
@@ -35,6 +36,10 @@ export default function ServicesPage() {
             </div>
 
             <QuoteSection />
+
+            <div className="px-6 pb-6">
+                <FooterPage />
+            </div>
         </>
     )
 }
