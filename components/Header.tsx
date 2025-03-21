@@ -84,7 +84,7 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
         {/* Desktop: Navigation CENTERED */}
         <nav className="hidden md:flex flex-10  justify-center space-x-10">
           <Link href="/about" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
-          <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
+          <Link href="/services" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
           <Link href="/location" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
           <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
           <Link href="/customer-care" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
@@ -105,7 +105,7 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
       {isOpen && (
         <div className={`md:hidden mt-4 p-4 rounded-md space-y-3`}>
           <Link href="/about" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
-          <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
+          <Link href="services" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
           <Link href="/location" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
           <Link href="/customer-care" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>

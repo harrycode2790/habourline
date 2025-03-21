@@ -6,10 +6,11 @@ import Header from "./Header";
 interface HeroSectionProps {
   title: string;
   description: string;
-  backgroundImage: string;
+  backgroundImage?: string;
+  backgroundColor?: string;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroundImage }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroundImage, backgroundColor }) => {
   return (
     <>
     
@@ -18,7 +19,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroun
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
        
-        <div className="absolute inset-0 bg-black/50"></div>
+        {backgroundImage && (
+          <div className="absolute inset-0 bg-black/50"></div>
+          )
+        }
 
         <Header backgroundColor="transparent" textColor="white" hoverColor="white" imageUrl="/images/logoW.png"/>
 
@@ -26,7 +30,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroun
           <p className="text-4xl md:text-6xl font-bold md:max-w-[847px] md:pl-20">
             {title}
           </p>
-          <p className="mt-4 text-base md:text-lg max-w-xs md:max-w-3xs mx-auto">
+          <p className="mt-4 mb-8 text-base md:text-lg max-w-xs md:max-w-3xs mx-auto">
             {description}
           </p>
         </div>

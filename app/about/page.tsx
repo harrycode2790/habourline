@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
 import TwoColumnText from "@/components/TwoColumnText";
@@ -22,7 +21,7 @@ export default function AboutPage() {
             backgroundImage="/images/about-top.png"
         />
 
-        <div className="container px-6 py-12 md:py-20 md:px-50">
+        <div className="px-6 py-12 md:py-20 md:px-30">
             <StatsSection stats= {stats} />
             <TwoColumnText
             leftText="We are the digital logistics company for Nigeria"
@@ -42,10 +41,6 @@ export default function AboutPage() {
             <FooterPage />
         </div>
        
-
-       
-
-        
         </>
     );
 }
