@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
 import TwoColumnText from "@/components/TwoColumnText";
@@ -42,10 +41,6 @@ export default function AboutPage() {
             <FooterPage />
         </div>
        
-
-       
-
-        
         </>
     );
 }

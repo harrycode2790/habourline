@@ -6,15 +6,16 @@ import Header from "./Header";
 interface HeroSectionProps {
   title: string;
   description: string;
-  backgroundImage: string;
+  backgroundImage?: string;
+  backgroundColor?: string;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroundImage }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroundImage, backgroundColor }) => {
   return (
     <>
     
       <section
-        className="relative min-h-[522px] md:min-h-[750px] bg-cover bg-center text-white md:text-left"
+        className={`relative min-h-[522px] md:min-h-[750px] bg-cover bg-center text-white md:text-left bg-[${backgroundColor}]`}
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
        
@@ -22,7 +23,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroun
 
         <Header backgroundColor="transparent" textColor="white" hoverColor="white" imageUrl="/images/logoW.png"/>
 
-        <div className="relative px-6 flex flex-col md:flex-row mt-16 md:mt-108 md:gap-8 text-center">
+        <div className="relative px-6 flex flex-col md:flex-row mt-16 md:mt-108 md:gap-8 text-center md:text-left">
           <p className="text-4xl md:text-6xl font-bold md:max-w-[847px] md:pl-20">
             {title}
           </p>
