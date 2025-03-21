@@ -14,7 +14,7 @@ export default function ServicesPage() {
             versatile delivery management solutions everywhere in the world."
             backgroundColor="#1019C2"/>  
 
-            <div className="px-6 py-12 md:py-20">
+            <div className="px-6 py-12 md:py-20 md:px-30">
 
                 <TwoColumnText leftText="Transportation and special services"
                 rightText={{
@@ -37,7 +37,7 @@ export default function ServicesPage() {
 
             <QuoteSection />
 
-            <div className="px-6 pb-6">
+            <div className="px-6 pb-6 md:px-30">
                 <FooterPage />
             </div>
         </>
