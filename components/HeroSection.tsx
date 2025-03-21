@@ -19,7 +19,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroun
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
        
-        <div className="absolute inset-0 bg-black/50"></div>
+        {backgroundImage && (
+          <div className="absolute inset-0 bg-black/50"></div>
+          )
+        }
 
         <Header backgroundColor="transparent" textColor="white" hoverColor="white" imageUrl="/images/logoW.png"/>
 
