@@ -21,7 +21,7 @@ export default function AboutPage() {
             backgroundImage="/images/about-top.png"
         />
 
-        <div className="container px-6 py-12 md:py-20 md:px-50">
+        <div className="container px-6 py-12 md:py-20 md:px-30">
             <StatsSection stats= {stats} />
             <TwoColumnText
             leftText="We are the digital logistics company for Nigeria"
