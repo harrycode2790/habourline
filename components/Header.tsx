@@ -13,11 +13,14 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
   const [scrolling, setScrolling] = useState(false);
   const [imageSrc, setImageSrc] = useState("/images/mobile_logo.png");
 
+
   useEffect(() => {
     const handleScroll = () => {
+      
       if (window.scrollY > 50) {
-        setScrolling(true);
-      } else {
+        setScrolling(true);      
+      }   
+      else {
         setScrolling(false);
       }
     };
@@ -37,6 +40,7 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
     return () => window.removeEventListener("resize", updateImage);
   }, []);
 
+ 
 
   return (
     <header className={

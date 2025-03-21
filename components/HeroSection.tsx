@@ -14,7 +14,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroun
     <>
     
       <section
-        className="relative h-[522px] md:h-[750px] bg-cover bg-center text-white text-center md:text-left"
+        className="relative h-[522px] md:h-[750px] bg-cover bg-center text-white  md:text-left"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
        
@@ -22,7 +22,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroun
 
         <Header backgroundColor="transparent" textColor="white" hoverColor="white" imageUrl="/images/logoW.png"/>
 
-        <div className="relative px-6 flex flex-col md:flex-row mt-16 md:mt-108 md:gap-8">
+        <div className="relative px-6 flex flex-col md:flex-row mt-16 md:mt-108 md:gap-8 text-center">
           <p className="text-4xl md:text-6xl font-bold md:max-w-[847px] md:pl-20">
             {title}
           </p>
