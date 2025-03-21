@@ -10,11 +10,11 @@ const page = () => {
   return (
     <>      
       <Header />
-      <div className=" conatiner px-6 py-12 md:py-20 md:px-50">
+      <div className="px-6 py-12 md:py-20 md:px-50">
         <HeroPage/>
       </div>
       <IndustrialPage/>
-      <div className=" conatiner px-6 py-12 md:py-20 md:px-50">
+      <div className="px-6 py-12 md:py-20 md:px-50">
         <TestimonialPgae/>
         <BlogPage/>
         <FaqPage/>
