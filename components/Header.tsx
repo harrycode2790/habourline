@@ -68,7 +68,7 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
           ) : (
             <Link href={`/`}>
             <Image              
-            src={ window.innerWidth >= 768 ? imageUrl : "/images/mobile_logo.png"}
+            src={imageSrc}
             alt="Logo" 
             width={200} 
             height={200} 
