@@ -31,7 +31,7 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
 
   useEffect(() => {
     const updateImage = () => {
-      setImageSrc(  window.innerWidth >= 768 ? "/images/logoW.png" : "/images/mobile_logo.png");
+      setImageSrc(  window.innerWidth >= 768 ? imageUrl : "/images/mobile_logo.png");
     };
 
     updateImage(); // Set on initial load
