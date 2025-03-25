@@ -4,11 +4,13 @@ import TwoColumnText from "@/components/TwoColumnText";
 import ServicesList from "./services-list";
 import QuoteSection from "./quote-section";
 import FooterPage from "@/components/FooterPage";
+import Header from "@/components/Header";
 
 export default function ServicesPage() {
 
     return(
         <>
+            <Header backgroundColor="#1019C2" textColor="white" hoverColor="white" imageUrl="/images/logoW.png"/>
             <HeroSection title="Together with our carefully selected partners, we offer you global service"
             description="We provide customised transportations, forwarding and storage services as well as 
             versatile delivery management solutions everywhere in the world."

@@ -4,6 +4,7 @@ import TwoColumnText from "@/components/TwoColumnText";
 import LifeInside from "./life-inside";
 import AboutInfoSection from "./about-info";
 import FooterPage from "@/components/FooterPage";
+import Header from "@/components/Header";
 
 export default function AboutPage() {
     const stats = [
@@ -14,7 +15,7 @@ export default function AboutPage() {
 
     return (
         <>
-       
+        <Header backgroundColor="transparent" textColor="white" hoverColor="white" imageUrl="/images/logoW.png"/>
         <HeroSection
             title="Habourline – supporting your needs with logistics"
             description="Sometimes features require a short description. This can be detailed description or just a short text."

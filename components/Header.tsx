@@ -15,6 +15,9 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
   const [imageSrc, setImageSrc] = useState("/images/mobile_logo.png");
   const currentPath = usePathname();
   const fixedHeaderPages = ["/about", "/services"];
+  const dropdownBg =
+  currentPath === "/services" ? "[#1019C2]" :
+  currentPath === "/about" ? "[#1B3A7A] bg-opacity-95" : "";
 
 
   useEffect(() => {
@@ -107,7 +110,7 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className={`md:hidden mt-4 p-4 rounded-md space-y-3`}>
+        <div className={`md:hidden mt-4 p-4 rounded-md space-y-3 bg-${dropdownBg}`} >
           <Link href="/about" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
           <Link href="services" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
           <Link href="/location" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
