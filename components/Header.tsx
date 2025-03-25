@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 
 
@@ -12,6 +13,8 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const [imageSrc, setImageSrc] = useState("/images/mobile_logo.png");
+  const currentPath = usePathname();
+  const fixedHeaderPages = ["/about", "/services"];
 
 
   useEffect(() => {
@@ -44,7 +47,8 @@ const Header = ({ backgroundColor = "white" , textColor = 'gray-700', hoverColor
 
   return (
     <header className={
-      ` bg-${ scrolling ? '[#1019C2]' : backgroundColor } text-${scrolling ? 'white' : textColor} py-5 px-7 shadow-sm sticky top-0 z-50 transition-all duration-1000 `
+      ` bg-${ scrolling ? '[#1019C2]' : backgroundColor } text-${scrolling ? 'white' : textColor} py-5 px-7 w-full 
+      shadow-sm ${fixedHeaderPages.includes(currentPath) ? 'fixed' : 'sticky'} top-0 z-50 transition-all duration-1000 `
       }>
       <div className="container mx-auto flex items-center justify-between md:justify-start relative">
         {/* Mobile: Menu button on the LEFT */}
