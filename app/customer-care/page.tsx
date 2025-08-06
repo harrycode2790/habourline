@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
         <Header />
-        <div className="container px-6 py-12 md:py-20 md:px-50">
+        <div className=" px-6 py-12 md:py-20 md:px-50">
         <CustomerCarePage/>
         <FooterPage/>
         </div>

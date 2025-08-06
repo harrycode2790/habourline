@@ -25,7 +25,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description, backgroun
         }
 
 
-        <div className="relative px-6 flex flex-col md:flex-row pt-28 md:pt-[492px] md:gap-8 text-center">
+        <div className="relative px-6 flex flex-col md:flex-row pt-28 md:pt-[492px] md:gap-8">
           <p className="text-4xl md:text-6xl font-bold md:max-w-[847px] md:pl-20">
             {title}
           </p>

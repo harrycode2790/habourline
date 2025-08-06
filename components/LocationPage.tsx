@@ -62,7 +62,7 @@ const LocationPage = () => {
       </div>
     </section>
 
-    <section className="container px-6 py-12 md:py-20 md:px-50 mt-16">
+    <section className="px-6 py-12 md:py-20 md:px-50 mt-16">
       <div className="text-center">
         <h2 className="text-xl md:text-3xl font-bold">In-store Habourline services near you</h2>
         <p className="mt-2 text-[#606060] py-4">

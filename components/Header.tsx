@@ -57,7 +57,7 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
   ${fixedHeaderPages.includes(currentPath) ? 'fixed' : 'sticky'} 
   top-0 z-50 transition-all duration-1000
 `}>
-      <div className=" mx-auto px-4 md:px-7 flex items-center justify-between md:justify-start relative">
+      <div className="mx-auto px-4 md:px-7 flex items-center justify-between md:justify-start relative">
 
         {/* Mobile: Menu button on the LEFT */}
         <button className="md:hidden p-2 absolute left-0" onClick={() => setIsOpen(!isOpen)}>
