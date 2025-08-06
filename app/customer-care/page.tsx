@@ -6,11 +6,11 @@ import Header from "@/components/Header"
 const page = () => {
   return (
     <>
-        <Header />
-        <div className=" px-6 py-12 md:py-20 md:px-50">
-        <CustomerCarePage/>
-        <FooterPage/>
-        </div>
+      <Header />
+      <div className=" px-6 py-12 md:py-20 md:px-50">
+        <CustomerCarePage />
+        <FooterPage />
+      </div>
     </>
   )
 }

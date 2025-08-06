@@ -8,7 +8,7 @@ const FooterPage = () => {
 
   return (
     <footer className="text-gray-800 mt-20  ">
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className=" mx-auto px-6 md:px-0 py-12">
     
             <div className="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-20 md:mb-35 gap-8">      
                 <h2 className="text-2xl md:text-5xl font-bold text-black">Your Needs are our <br /> priority</h2>
