@@ -35,7 +35,7 @@ const FaqPage = () => {
     }
 
   return (
-    <section className="max-w-5xl md:opacity-50">
+    <section className=" md:opacity-50">
       <h2 className="text-2xl md:text-5xl font-bold text-center md:text-start mb-10">
         Frequently <br /> Asked Questions
       </h2>

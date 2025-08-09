@@ -30,7 +30,7 @@ const articles = [
 
 const BlogPage = () => {
   return (
-    <section className="max-w-7xl mx-auto  md:py-20">
+    <section className="mx-auto  md:py-20">
       
       <div className="flex justify-between items-end mb-8 md:mb-12">
         <h2 className="text-3xl md:text-5xl font-bold">The latest articles <br /> and industry insights</h2>

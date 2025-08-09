@@ -52,7 +52,7 @@ const TestimonialPgae = () => {
     const [activeIndex, setActiveIndex] = useState(0)
     
   return (
-<section className="max-w-7xl mx-auto py-12 relative mb-30">
+<section className=" mx-auto py-12 relative mb-30">
   <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] gap-10 bg-gray-100 relative">
     {/* Image Section */}
     <div className="relative w-full h-64 lg:h-full">
@@ -88,7 +88,7 @@ const TestimonialPgae = () => {
 
   
   <div className="absolute  w-full  mt-6 md:mt-12">
-    <div className=" grid grid-cols-4 justify-start gap-8 border-b border-gray-300 max-w-5xl">
+    <div className=" grid grid-cols-4 justify-start gap-8 border-b border-gray-300 max-w-8xl">
       {testimonials.map((testimonial, index) => (
         <button
           key={index}

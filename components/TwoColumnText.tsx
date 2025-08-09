@@ -17,7 +17,7 @@ const TwoColumnText: React.FC<TwoColumnTextProps> = ({ leftText, rightText }) =>
       </div>
 
       {/* Right Column */}
-      <div className="md:max-w-[458px]">
+      <div className="md:max-w-[500px]">
         {rightText.bold && <p className="font-bold text-lg md:text-2xl">{rightText.bold}</p>}
         {rightText.paragraphs.map((para, index) => (
           <p key={index} className="text-gray-600 mt-4 md:text-lg">{para}</p>
