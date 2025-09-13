@@ -8,11 +8,11 @@ import { usePathname } from "next/navigation";
 
 
 
-const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor = 'black', imageUrl = "/images/harbourline logo.png" }) => {
+const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor = 'black', imageUrl = "/images/Habourline - Grey.png" }) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
-  const [imageSrc, setImageSrc] = useState("/images/mobile_logo.png");
+  const [imageSrc, setImageSrc] = useState("/images/Habourline - Grey.png");
   const currentPath = usePathname();
   const fixedHeaderPages = ["/about", "/services"];
   const dropdownBg =
@@ -37,7 +37,7 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
 
   useEffect(() => {
     const updateImage = () => {
-      setImageSrc(window.innerWidth >= 768 ? imageUrl : "/images/mobile_logo.png");
+      setImageSrc(window.innerWidth >= 768 ? imageUrl : "/images/Habourline - Grey.png");
     };
 
     updateImage(); // Set on initial load
@@ -52,7 +52,7 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
     <header className={`
   bg-${scrolling ? '[#1019C2]' : backgroundColor} 
   text-${scrolling ? 'white' : textColor} 
-  py-4 w-full 
+  md:py-2 py-4 w-full 
   shadow-sm 
   ${fixedHeaderPages.includes(currentPath) ? 'fixed' : 'sticky'} 
   top-0 z-50 transition-all duration-1000
@@ -65,17 +65,20 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
         </button>
 
         {/* Mobile: Logo CENTERED / Desktop: Left */}
-        <div className="flex-2 flex justify-center md:justify-start">
-          <Link href="/">
+        <div className="flex-1 flex justify-center md:justify-start items-center space-x-3">
+          <Link href="/" className="flex  items-center space-x-1">
             <Image
               src={imageSrc}
               alt="Logo"
               width={200}
               height={200}
-              className={`w-32 md:w-${scrolling ? '52' : '48'} lg:w-64 h-auto`}
+              className={`w-10 md:w-${scrolling ? '30' : '30'} lg:w-20 h-auto`}
             />
+            <h2 className="text-xl font-semibold">Harbourline</h2>
+            <h2 className="text-xl font-semibold">Offshore</h2>
           </Link>
         </div>
+
 
         {/* Desktop: Navigation CENTERED */}
         <nav className="hidden md:flex flex-10 justify-center space-x-10">

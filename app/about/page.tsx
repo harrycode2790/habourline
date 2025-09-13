@@ -15,7 +15,7 @@ export default function AboutPage() {
 
     return (
         <>
-        <Header backgroundColor="transparent" textColor="white" hoverColor="white" imageUrl="/images/logoW.png"/>
+        <Header backgroundColor="transparent" textColor="white" hoverColor="white"/>
         <HeroSection
             title="Habourline – supporting your needs with logistics"
             description="Sometimes features require a short description. This can be detailed description or just a short text."
