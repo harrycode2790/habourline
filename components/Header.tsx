@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 
 
 
-const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor = 'black', imageUrl = "/images/Habourline - Alternative - Darkg-Transparent-01.png" }) => {
+const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor = 'black', imageUrl = "/images/Habourline - Alternative - Darkg-Transparent-01.png" , scrollImg = '/images/Habourline - Grey.png'}) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
@@ -67,8 +67,9 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
         {/* Mobile: Logo CENTERED / Desktop: Left */}
         <div className="flex-1 flex justify-center md:justify-start items-center space-x-3">
           <Link href="/" className="flex  items-center space-x-1">
+         
             <Image
-              src={imageSrc}
+              src={scrolling ? scrollImg : imageSrc}
               alt="Logo"
               width={200}
               height={200}

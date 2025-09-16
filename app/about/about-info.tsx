@@ -1,14 +1,14 @@
 import { FaBuilding, FaAward } from "react-icons/fa";
-import { MdPeople } from "react-icons/md";
+import { MdDirectionsBoat } from "react-icons/md";
 import { IoIosBriefcase } from "react-icons/io";
 
 
 const AboutInfoSection = () => {
   const infoCards = [
     { icon: <IoIosBriefcase size={32} className="text-gray-600 md:text-[#DA7934]" />, title: "Team and Company structure", link: "#" },
-    { icon: <FaBuilding size={32} className="text-gray-600 md:text-[#DA7934]" />, title: "Branches", link: "#" },
+    { icon: <FaBuilding size={32} className="text-gray-600 md:text-[#DA7934]" />, title: "Habourline Branches", link: "#" },
     { icon: <FaAward size={32} className="text-gray-600 md:text-[#DA7934]" />, title: "Award and Certification", link: "#" },
-    { icon: <MdPeople size={32} className="text-gray-600 md:text-[#DA7934]" />, title: "Official Clients", link: "#" },
+    { icon: <MdDirectionsBoat size={32} className="text-gray-600 md:text-[#DA7934]" />, title: "Vessel Catalogue", link: "/vessel-catalogue" },
   ];
 
   return (
