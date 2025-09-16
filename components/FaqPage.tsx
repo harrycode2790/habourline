@@ -4,26 +4,47 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
     {
-      question: "What mostly people want to ask no.1 ?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      question: "Can you handle oversized or hazardous cargo? ",
+      answer: "Yes. We have the expertise and certifications to manage heavy-lift, oversized, and dangerous goods in compliance with international safety standards.",
     },
     {
-      question: "What mostly people want to ask no.2 ?",
+      question: "How do I get a shipping quote? ",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "You can request a quotation by providing cargo details, origin, destination, weight/volume, and required delivery time.",
     },
     {
-      question: "What mostly people want to ask no.3 ?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      question: "Can I track my shipment?",
+      answer: "Yes, we provide real-time tracking and status updates for all shipments.",
     },
     {
-      question: "What mostly people want to ask no.4 ?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      question: "What if my cargo is delayed?",
+      answer: "We will notify you immediately, explain the cause, and offer alternative arrangements where possible.",
     },
     {
-      question: "What mostly people want to ask no.5 ?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      question: "What documents are required for marine transport?",
+      answer: "Generally, a Bill of Lading, Commercial Invoice, Packing List, and any applicable permits or certificates (e.g., for hazardous materials.",
     },
+     {
+      question: "Do you assist with customs clearance?",
+      answer: "Yes, we provide full customs brokerage services, including documentation, duty calculation, and payment processing.",
+    },
+     {
+      question: "Is cargo insured during transit?",
+      answer: "Insurance is optional but highly recommended. We can arrange marine insurance tailored to your cargo.",
+    },
+     {
+      question: "Do I need a contract for every shipment?",
+      answer: "We handle both one-time shipments and long-term logistics contracts, depending on your needs.",
+    },
+      {
+      question: "What payment methods do you accept?",
+      answer: "We accept secure bank transfers and corporate payment arrangements.",
+    },
+      {
+      question: "How do I contact you in case of an emergency?",
+      answer: "We provide 24/7 customer support for time-sensitive cargo and vessel operations",
+    },
+
    
   ];
 

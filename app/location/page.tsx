@@ -6,7 +6,7 @@ import LocationPage from '@/components/LocationPage'
 const locationPage = () => {
   return (
     <>
-      <Header backgroundColor='[#1019C2]' textColor='white' hoverColor='blue-400' imageUrl='/images/logoW.png' />
+      <Header backgroundColor='[#1019C2]' textColor='white' hoverColor='blue-400'  />
       
       <LocationPage />
       <div className="px-6 py-12 md:py-20 md:px-50">

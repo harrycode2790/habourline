@@ -8,7 +8,7 @@ import Header from "@/components/Header";
 
 export default function AboutPage() {
     const stats = [
-        { value: "320k +", title: "People working at Generix" },
+        { value: "320k +", title: "People working at Harbourline" },
         { value: "1,035k", title: "Parcels delivered per year" },
         { value: "409", title: "Territories served" },
         ];

@@ -26,7 +26,7 @@ const FooterPage = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2">
-              <Image src={'/images/favicon.png'} width={50} height={50} alt="fav"/>
+              <Image src={'/images/Habourline - Alternative - Darkg-Transparent-01.png'} width={50} height={50} alt="fav"/>
               <h3 className="text-xl font-bold"> <span className="hidden md:block">Habourline Offshore Ltd</span> <span className="md:hidden">Habourline</span> </h3>
             </div>
             <p className="text-sm mt-2 hidden md:block text-[#606060] "> { breakLineText(text, 4) } </p>

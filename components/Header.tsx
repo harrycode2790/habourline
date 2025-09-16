@@ -8,11 +8,11 @@ import { usePathname } from "next/navigation";
 
 
 
-const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor = 'black', imageUrl = "/images/Habourline - Grey.png" }) => {
+const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor = 'black', imageUrl = "/images/Habourline - Alternative - Darkg-Transparent-01.png" }) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
-  const [imageSrc, setImageSrc] = useState("/images/Habourline - Grey.png");
+  const [imageSrc, setImageSrc] = useState("/images/Habourline - Alternative - Darkg-Transparent-01.png");
   const currentPath = usePathname();
   const fixedHeaderPages = ["/about", "/services"];
   const dropdownBg =
@@ -37,7 +37,7 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
 
   useEffect(() => {
     const updateImage = () => {
-      setImageSrc(window.innerWidth >= 768 ? imageUrl : "/images/Habourline - Grey.png");
+      setImageSrc(window.innerWidth >= 768 ? imageUrl : "/images/Habourline - Alternative - Darkg-Transparent-01.png");
     };
 
     updateImage(); // Set on initial load

@@ -8,8 +8,8 @@ const QuoteSection = () => {
       </div>
 
       <div className="flex flex-col md:flex-row md:justify-between mt-10">
-        <p className="text-lg font-semibold mb-8 flex flex-col md:flex-row">
-          <span className="font-bold">Harvey Mitchell,</span> <span>Office Manager</span>
+        <p className="text-lg font-semibold mb-8 flex flex-col md:flex-row space-x-2">
+          <span className="font-bold ">Harvey Mitchell,</span> <span>Office Manager</span>
         </p>
 
         <div className="flex md:gap-4 justify-between mb-8">

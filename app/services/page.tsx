@@ -10,7 +10,7 @@ export default function ServicesPage() {
 
     return (
         <>
-            <Header backgroundColor="#1019C2" textColor="white" hoverColor="white" imageUrl="/images/logoW.png" />
+            <Header backgroundColor="#1019C2" textColor="white" hoverColor="white"  />
             <HeroSection title="Together with our carefully selected partners, we offer you global service"
                 description="We provide customised transportations, forwarding and storage services as well as 
             versatile delivery management solutions everywhere in the world."
