@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-
 import BlogPage from "@/components/BlogPage";
 import FaqPage from "@/components/FaqPage";
 import FooterPage from "@/components/FooterPage";
