@@ -25,7 +25,7 @@ export default function AboutPage() {
         <div className="px-6 py-12 md:py-20 md:px-30">
             <StatsSection stats= {stats} />
             <TwoColumnText
-            leftText="We are the digital logistics company for Nigeria"
+            leftText="We lead the way "
             rightText={{
             bold: "We want to lead the way towards sustainable DIGITAL logistics – we strive to run efficient operations by being a highly trusted company and partner that protect the environment, provide an ideal place to work for all.",
             paragraphs: [

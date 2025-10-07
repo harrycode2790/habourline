@@ -24,9 +24,9 @@ const services : Service[] = [
       image: "/images/location2.png",
       title: "Habourline Ship Center",
       description: [
-        "Ship domestic or international packages with Generix Express® packages, including some approved dangerous goods.",
-        "Drop off Generix Ground packages, hold your Generix Express package for pickup.",
-        "Get later cutoff times for Generix Express shipments.",
+        "Ship domestic or international packages with Harbourline Express® packages, including some approved dangerous goods.",
+        "Drop off Harbourline Ground packages, hold your Harbourline Express package for pickup.",
+        "Get later cutoff times for Harbourline Express shipments.",
       ],
     },
     {
@@ -34,7 +34,7 @@ const services : Service[] = [
       image: "/images/location3.png",
       title: "Habourline Authorized ShipCenter",
       description: [
-        "Visit independently owned and operated stores for your packing needs and to select Generix services for your domestic and international shipments.",
+        "Visit independently owned and operated stores for your packing needs and to select Harbourline services for your domestic and international shipments.",
       ],
     },
   ];
@@ -49,16 +49,7 @@ const LocationPage = () => {
         locations <span className="md:hidden block">near you</span>      
       </p>
       <div className="mt-6 w-full max-w-lg">
-        <div className="relative flex items-center">
-          <input
-            type="text"
-            placeholder="Find location near"
-            className="w-full py-3 px-4 rounded-md border border-gray-300 text-black focus:outline-none bg-white"
-          />
-          <button className="absolute right-1 top-1 bottom-1 bg-black text-white px-4 rounded-md">
-            Search
-          </button>
-        </div>
+        
       </div>
     </section>
 
@@ -67,7 +58,7 @@ const LocationPage = () => {
         <h2 className="text-xl md:text-3xl font-bold">In-store Habourline services near you</h2>
         <p className="mt-2 text-[#606060] py-4">
           We are here to help. We'd like to remind you of all the ways we can help you safely print,  <br />
-          pack and ship. Find Generix services when and where you need them.
+          pack and ship. Find Harbourline services when and where you need them.
         </p>
       </div>
 

@@ -18,11 +18,19 @@ const fadeVariant: Variants = {
 };
 
 const Texts = [
-    "HarbourLine Offstore LTD Express provides customized services for customers around the world from 50+ leading industries.",
-    "Sometimes features require a short  description. This can be detailed description or just a short text",
-    "The tools you need to  win and keep more  clients",
-    "We Transport goods  across the world's ocean  with precision and care",
+    "HarbourLine Offstore LTD delivers tailored logistics and freight solutions across 50+ industries worldwide — built for reliability, speed, and precision.",
+    "From automobiles to luxury fleets, our Car Shipping Services ensure safe and timely delivery anywhere around the globe.",
+    "We move what moves the world — offering specialized transport for heavy machinery, equipment, and industrial cargo.",
+    "Your goods, our priority. We manage container shipments across oceans with efficiency, transparency, and care.",
 ];
+
+const WhyChooseTexts = [
+    "Our experienced logistics specialists and global partnerships ensure smooth coordination and dependable delivery across every continent.",
+    "We believe support should never stop — that’s why our customer care team is available around the clock to assist you with every shipment.",
+    "We offer flexible pricing and transparent quotes, giving you premium logistics solutions at the most competitive market rates.",
+];
+
+
 
 const HeroPage = () => {
     return (
@@ -83,7 +91,7 @@ const HeroPage = () => {
                             <FaUsers className="text-5xl text-[#DA7934] mx-auto md:mx-0" />
                             <h3 className="text-lg md:text-xl font-bold mt-4">Top Team</h3>
                             <p className="text-gray-600 mt-2 text-sm md:text-base">
-                                {breakLineText(Texts[1], 5)}
+                                {breakLineText(WhyChooseTexts[0], 5)}
                             </p>
                             <Link
                                 href="#"
@@ -100,7 +108,7 @@ const HeroPage = () => {
                                 Customer Support
                             </h3>
                             <p className="text-gray-600 mt-2 text-sm md:text-base">
-                                {breakLineText(Texts[1], 5)}
+                                {breakLineText(WhyChooseTexts[1], 5)}
                             </p>
                             <Link
                                 href="#"
@@ -117,7 +125,7 @@ const HeroPage = () => {
                                 Competitive Rates
                             </h3>
                             <p className="text-gray-600 mt-2 text-sm md:text-base">
-                                {breakLineText(Texts[1], 5)}
+                                {breakLineText(WhyChooseTexts[2], 5)}
                             </p>
                             <Link
                                 href="#"
@@ -158,7 +166,7 @@ const HeroPage = () => {
                                 Marine Cargo Service
                             </h3>
                             <p className="text-gray-600 mt-2 text-sm md:text-base">
-                                {breakLineText(Texts[1], 5)}
+                                {breakLineText(Texts[0], 5)}
                             </p>
                         </div>
 
@@ -178,7 +186,7 @@ const HeroPage = () => {
                                 Heavy Equipment Services
                             </h3>
                             <p className="text-gray-600 mt-2 text-sm md:text-base">
-                                {breakLineText(Texts[1], 5)}
+                                {breakLineText(Texts[2], 5)}
                             </p>
                         </div>
 
@@ -188,7 +196,7 @@ const HeroPage = () => {
                                 Container Sea Cargo
                             </h3>
                             <p className="text-gray-600 mt-2 text-sm md:text-base">
-                                {breakLineText(Texts[1], 5)}
+                                {breakLineText(Texts[3], 5)}
                             </p>
                         </div>
                     </div>

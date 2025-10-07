@@ -86,7 +86,6 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
           <Link href="/about" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
           <Link href="/services" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
           <Link href="/location" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
-          <Link href="#" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
           <Link href="/customer-care" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
         </nav>
 

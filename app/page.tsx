@@ -48,26 +48,6 @@ export default function Page() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}
-        className="px-6 py-12 md:py-20 md:px-50"
-      >
-        <TestimonialPgae />
-      </motion.div>
-
-      <motion.div
-        variants={fadeVariant}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
-        className="px-6 py-12 md:py-20 md:px-50"
-      >
-        <BlogPage />
-      </motion.div>
-
-      <motion.div
-        variants={fadeVariant}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
          className="px-6 py-12 md:py-20 md:px-50"
       >
         <FaqPage />

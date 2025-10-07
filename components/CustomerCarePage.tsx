@@ -72,16 +72,7 @@ const CustomerCarePage = () => {
                 {/* Contact Lookup Section */}
                 <div className="bg-white p-6  md:mt-5  shadow-sm md:flex-1">
                 <h2 className="text-lg font-semibold">Contact Lookup</h2>
-                <div className="mt-4 relative w-full">
-                    <input
-                        type="text"
-                        placeholder="Enter your tracking number(s)"
-                        className="w-full border border-gray-300 px-4 py-3 pr-20 rounded-md md:rounded-sm  focus:outline-none"
-                    />
-                    <button className="absolute right-1 top-1 bottom-1 bg-[#0B91D4] rounded-sm text-white px-5 py-1.5  hover:bg-blue-600">
-                        <span className="text-sm">Track</span>
-                    </button>
-                </div>
+                
 
                 <p className=" text-sm md:text-xs  text-gray-500 mt-3">
                     {breakLineText(
