@@ -89,12 +89,6 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
           <Link href="/customer-care" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
           <Link href="/vessel-catalogue" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Vessel Catalogue </Link>
         </nav>
-
-        {/* Desktop: Track & Login Buttons (Right) */}
-        <div className="hidden md:flex space-x-4">
-          <Link href="#" className={`text-${hoverColor} font-semibold px-4 py-2 rounded-md`}>Track</Link>
-          <button className="bg-[#0B91D4] text-white px-4 py-2 rounded-md hover:bg-blue-400">Charter a Vessel</button>
-        </div>
       </div>
 
       {/* Mobile Menu Dropdown */}
@@ -105,13 +99,6 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
           <Link href="/location" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
           <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
           <Link href="/customer-care" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
-
-          <div className="mt-4 flex flex-col space-y-2">
-            <Link href="#" className={`text-${hoverColor} font-semibold text-center`}>Track</Link>
-            <button className="bg-[#0B91D4] text-white text-center px-4 py-2 rounded-md hover:bg-blue-400">
-              <Link href="/">Charter a Vessel</Link>
-            </button>
-          </div>
         </div>
       )}
     </header>
@@ -120,3 +107,4 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
 };
 
 export default Header;
+
