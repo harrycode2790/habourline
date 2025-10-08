@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 
 
 
-const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor = 'black', imageUrl = "/images/Habourline - Alternative - Darkg-Transparent-01.png" , scrollImg = '/images/Habourline - Grey.png'}) => {
+const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor = 'black', imageUrl = "/images/Habourline - Alternative - Darkg-Transparent-01.png", scrollImg = '/images/Habourline - Grey.png' }) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
@@ -67,7 +67,7 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
         {/* Mobile: Logo CENTERED / Desktop: Left */}
         <div className="flex-1 flex justify-center md:justify-start items-center space-x-3">
           <Link href="/" className="flex  items-center space-x-1">
-         
+
             <Image
               src={scrolling ? scrollImg : imageSrc}
               alt="Logo"
@@ -87,6 +87,7 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
           <Link href="/services" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
           <Link href="/location" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
           <Link href="/customer-care" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
+          <Link href="/vessel-catalogue" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Vessel Catalogue </Link>
         </nav>
 
         {/* Desktop: Track & Login Buttons (Right) */}
