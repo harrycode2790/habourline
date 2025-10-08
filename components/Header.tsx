@@ -75,7 +75,7 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
               height={200}
               className={`w-10 md:w-${scrolling ? '30' : '30'} lg:w-20 h-auto`}
             />
-            <h2 className="text-xl font-semibold">Harbourline</h2>
+            <h2 className="text-xl font-semibold">Habourline</h2>
             <h2 className="text-xl font-semibold">Offshore</h2>
           </Link>
         </div>
@@ -107,4 +107,5 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
 };
 
 export default Header;
+
 
