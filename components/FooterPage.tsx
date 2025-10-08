@@ -58,7 +58,7 @@ const FooterPage = () => {
               <h4 className="font-semibold text-lg">Office</h4>
               <p className="mt-3 text-sm">-</p>
               <h4 className="font-semibold text-lg mt-4">Contact</h4>
-              <a className="mt-2 text-sm"  href="mailto:sales@habourlineoffshore.com">sales@habourlineoffshore.com</a><br>
+              <a className="mt-2 text-sm"  href="mailto:sales@habourlineoffshore.com">sales@habourlineoffshore.com</a><br />
               <a className="mt-2 text-sm" href="mailto:partnerships@habourlineoffshore.com">partnerships@habourlineoffshore.com</a>
             </div>
           </div>
@@ -78,4 +78,5 @@ const FooterPage = () => {
 }
 
 export default FooterPage
+
 
