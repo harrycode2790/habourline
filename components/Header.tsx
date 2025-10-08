@@ -16,8 +16,11 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
   const currentPath = usePathname();
   const fixedHeaderPages = ["/about", "/services"];
   const dropdownBg =
-    currentPath === "/services" ? "[#1019C2]" :
-      currentPath === "/about" ? "[#1B3A7A] bg-opacity-95" : "";
+    currentPath === "/services"
+      ? "[#1019C2]"
+      : currentPath === "/about"
+        ? "[#1019C2]"
+        : "";
 
 
   useEffect(() => {
@@ -96,9 +99,9 @@ const Header = ({ backgroundColor = "white", textColor = 'gray-700', hoverColor 
         <div className={`md:hidden mt-4 p-4 rounded-md space-y-3 bg-${dropdownBg}`}>
           <Link href="/about" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>About</Link>
           <Link href="/services" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Services</Link>
-          <Link href="/location" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>
-          <Link href="#" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Our Strength</Link>
+          <Link href="/location" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Location</Link>         
           <Link href="/customer-care" className={`block hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Customer Care</Link>
+          <Link href="/vessel-catalogue" className={`hover:text-${scrolling ? 'blue-400' : hoverColor}`}>Vessel Catalogue </Link>
         </div>
       )}
     </header>
