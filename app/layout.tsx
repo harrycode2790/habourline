@@ -3,7 +3,7 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Harbourline Shipping",
+  title: "Habourline Shipping",
   description: "Harbourline Shipping Services",
   icons : [{
     rel: "icon",
@@ -26,3 +26,4 @@ export default function RootLayout({
     </html>
   );
 }
+
