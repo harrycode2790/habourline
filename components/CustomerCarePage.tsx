@@ -38,8 +38,8 @@ const services  = [
         "Express courier delivered parcel and documents service for your shipping needs. Sometimes features require a short or complete description.",
       icon: <FaShippingFast />,
       contact: [
-        { icon: <MdPhone size={16} />, text: "(269) 546-1951" },
-        { icon: <MdMail size={16} />, text: "Send Email" },
+        { icon: <MdPhone size={16} />, text: "(+234) 9020110761" },
+        { icon: <MdMail size={16} />, text: "sales@habourlineoffshore.org" },
         { icon: <MdInfo size={16} />, text: "FAQ, Tips and Advice" },
       ],
     },
@@ -50,13 +50,12 @@ const services  = [
       icon: <FaStore />,
       contact: {
         consumers: [
-          { icon: <MdPhone size={16} />, text: "(269) 546-1951" },
-          { icon: <MdMail size={16} />, text: "Send Email" },
-          { icon: <MdForum size={16} />, text: "Chatbot" },
+          { icon: <MdPhone size={16} />, text:"(+234) 9020110761"},
+          { icon: <MdMail size={16} />, text: "sales@habourlineoffshore.org"  },
         ],
         business: [
-          { icon: <MdPhone size={16} />, text: "(903) 391-2392" },
-          { icon: <MdMail size={16} />, text: "Send Email" },
+          { icon: <MdPhone size={16} />, text: "(+234) 9020110761"},
+          { icon: <MdMail size={16} />, text: "sales@habourlineoffshore.org"  },
           { icon: <MdInfo size={16} />, text: "FAQs" },
         ],
       },

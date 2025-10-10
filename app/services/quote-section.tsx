@@ -7,11 +7,7 @@ const QuoteSection = () => {
         With every wave a new opportunity arises
       </div>
 
-      <div className="flex flex-col md:flex-row md:justify-between mt-10">
-        <p className="text-lg font-semibold mb-8 flex flex-col md:flex-row space-x-2">
-          <span className="font-bold ">Harvey Mitchell,</span> <span>Office Manager</span>
-        </p>
-      </div>
+      
     </div>
   );
 };
